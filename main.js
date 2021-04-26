@@ -42,6 +42,10 @@ var screen = {
 	y: -height / 2
 }
 function restart() {
+	upClicked = false
+	leftClicked = false
+	downClicked = false
+	rightClicked = false
 	closeAllMenus()
 	player.rotation = 0
 	player.rotationSpeed = getPlayerManeuvrability()

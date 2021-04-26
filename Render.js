@@ -1,5 +1,5 @@
-var width = 700
-var height = 700
+var width = Math.max(700, window.innerWidth)
+var height = Math.max(700, window.innerHeight)
 
 function render() {
 	ctx.font = "24px Arial black"
@@ -81,11 +81,13 @@ function drawFuel() {
 	ctx.fillStyle = "rgba(40,225,40,1)"
 	ctx.font = "20px fantasy"
 	ctx.lineWidth = 4
-	ctx.fillText("Fuel", 47, 150 - 20)
-	ctx.strokeRect(45, 150, 40, 400)
+	let h = 400
+	let y = height / 2 - h / 2
+	ctx.fillText("Fuel", 47, y - 20)
+	ctx.strokeRect(45, y, 40, h)
 
-	let h = (400 * player.fuel) / getMaxFuel()
-	ctx.fillRect(45, 150 + 400 - h, 40, h)
+	let hF = (h * player.fuel) / getMaxFuel()
+	ctx.fillRect(45, y + h - hF, 40, hF)
 }
 function drawDepth() {
 	ctx.font = "20px fantasy"
