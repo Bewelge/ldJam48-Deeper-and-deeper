@@ -1,0 +1,111 @@
+html,
+body {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 700px;
+	height: 700px;
+	margin: 0;
+	padding: 0;
+	font-family: fantasy;
+}
+canvas {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#mainCanvas {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #1565c0;
+}
+.wrapper {
+	background-color: #607d8b;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+.title {
+	text-align: center;
+	width: 100%;
+	font-size: 40px;
+	position: absolute;
+	top: 50px;
+	transition: 0.5s all ease-out;
+}
+.subTitle {
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+	position: absolute;
+	top: 95px;
+	transition: 0.5s all ease-out;
+}
+.bottomTitle {
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+	position: absolute;
+	bottom: 50px;
+	transition: 0.5s all ease-out;
+}
+.scoreboard {
+	text-align: left;
+	font-size: 25px;
+	position: absolute;
+	left: 20%;
+	width: 60%;
+	height: 400px;
+	top: 150px;
+}
+.scoreLine {
+	text-align: left;
+	width: 100%;
+}
+.largeLine {
+	text-align: left;
+	width: 100%;
+	font-size: 43px;
+	margin-top: 10px;
+}
+.indentedLine {
+	text-align: left;
+	width: calc(100%-60px);
+	font-size: 20px;
+	margin-left: 20px;
+	margin-right: 40px;
+}
+.scoreLine span,
+.indentedLine span,
+.largeLine span {
+	float: right;
+}
+.btn-group {
+	position: absolute;
+	width: 100%;
+	top: 600px;
+	align-self: auto;
+	display: flex;
+}
+.btn {
+	font-family: fantasy;
+	font-size: 30px;
+	padding: 5px;
+	background-color: #b0bec5;
+}
+.btn span {
+	float: right;
+}
+.shopBtn {
+	width: 100%;
+}
+.shopPrice {
+	width: 20%;
+}
+.upgradeProgressBar {
+	text-align: center;
+}
