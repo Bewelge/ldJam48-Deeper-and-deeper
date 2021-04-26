@@ -258,7 +258,7 @@ function setupCanvases() {
 }
 var beginningTicker = 0
 function beginningTick() {
-	if (beginningTicker < 2) {
+	if (beginningTicker < 250) {
 		beginningTicker++
 		ctx2.clearRect(0, 0, width, height)
 		ctx2.save()
