@@ -201,7 +201,7 @@ function updatePlayer() {
 			player.width / 2 + Math.max(mob.width, mob.height) / 2
 		) {
 			player.bag.push(mob.key)
-			if (mob.key == "plasticBag") {
+			if (mob.key == "Plastic Bag") {
 				openEnd()
 			}
 			mob.dead = true
